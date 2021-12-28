@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AdminCategoryActivity">
+
+    <TextView
+        android:id="@+id/addNewProductTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Add New Product"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearCategoryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addNewProductTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/tShirtIV"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/tshirts" />
+
+        <ImageView
+            android:id="@+id/sportShirtIV"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/sports" />
+
+        <ImageView
+            android:id="@+id/femaleDressIV"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/female_dresses" />
+
+        <ImageView
+            android:id="@+id/sweaterIV"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/sweather" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearCategoryLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearCategoryLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/glassesIV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/glasses" />
+
+        <ImageView
+            android:id="@+id/pursesBagIV"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/purses_bags" />
+
+        <ImageView
+            android:id="@+id/hatsIV"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:src="@drawable/hats" />
+
+        <ImageView
+            android:id="@+id/shoeIV"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/shoess" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearCategoryLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearCategoryLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/headPhoneIV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/headphoness" />
+
+        <ImageView
+            android:id="@+id/laptopIV"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/laptops" />
+
+        <ImageView
+            android:id="@+id/watchIV"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:src="@drawable/watches" />
+
+        <ImageView
+            android:id="@+id/mobileIV"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/mobiles" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/maintainBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkNewOrderBtn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Maintain Product"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/checkNewOrderBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adminLogoutBtn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Check New Order"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/adminLogoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>
